@@ -34,8 +34,8 @@ public class Fighter {
     }
 
     //Lógica
-    public Integer combat(){
-        setHealth(this.getAttack());
+    public Integer combat(Integer damage){
+        setHealth(damage);
         return getHealth();
     }
 }
