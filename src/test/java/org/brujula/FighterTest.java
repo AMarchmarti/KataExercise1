@@ -15,16 +15,16 @@ public class FighterTest {
         assertEquals(5, fighter.getHealth(),0);
         assertEquals(10, fighter.getAttack(),0);
         assertEquals("Toni", fighter.getName());
-        assertEquals(-5, fighter.combat(), 0);
+        assertEquals(-5, fighter.combat(fighter.getAttack()), 0);
     }
-    /*
+
     @Test
     public void basicTests() {
-        assertEquals("Lew", Kata.declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4)));
+        //assertEquals("Lew", Kata.declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4)));
         assertEquals("Harry", Kata.declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4)));
         assertEquals("Harald", Kata.declareWinner(new Fighter("Harald", 20, 5), new Fighter("Harry", 5, 4)));
         assertEquals("Harald", Kata.declareWinner(new Fighter("Harald", 20, 5), new Fighter("Harry", 5, 4)));
         assertEquals("Harald", Kata.declareWinner(new Fighter("Jerry", 30, 3), new Fighter("Harald", 20, 5)));
         assertEquals("Harald", Kata.declareWinner(new Fighter("Jerry", 30, 3), new Fighter("Harald", 20, 5)));
-    }*/
+    }
 }
