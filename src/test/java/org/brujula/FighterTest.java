@@ -11,11 +11,11 @@ public class FighterTest {
     @Test
     public void fighterTest(){
         Fighter fighter = new Fighter("Toni", 10, 10);
-        setLife(5);
-        assertEquals(5, fighter.getLife());
-        assertEquals(10, fighter.getAttack);
+        fighter.setHealth(5);
+        assertEquals(5, fighter.getHealth(),0);
+        assertEquals(10, fighter.getAttack(),0);
         assertEquals("Toni", fighter.getName());
-        //assertEquals(0, fighter.combat());
+        assertEquals(-5, fighter.combat(), 0);
     }
     /*
     @Test
